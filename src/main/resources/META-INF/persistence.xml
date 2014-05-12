@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="com.mycompany_Scuba_App_war_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.hannes.scuba.domain.Address</class>
+    <class>com.hannes.scuba.domain.Branches</class>
+    <class>com.hannes.scuba.domain.Company</class>
+    <class>com.hannes.scuba.domain.Customers</class>
+    <class>com.hannes.scuba.domain.Inventory</class>
+    <class>com.hannes.scuba.domain.Person</class>
+    <class>com.hannes.scuba.domain.Roles</class>
+    <class>com.hannes.scuba.domain.Trips</class>
+    <class>com.hannes.scuba.domain.Users</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/scubadb2014"/>
+      <property name="javax.persistence.jdbc.password" value="hannes"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.user" value="hannes"/>
+      <property name="eclipselink.ddl-generation" value="create-tables"/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="com.mycompany_Scuba_App_war_1.0-SNAPSHOTPU2" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/scubadb2014"/>
+      <property name="javax.persistence.jdbc.password" value="hannes"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.user" value="hannes"/>
+      <property name="eclipselink.ddl-generation" value="create-tables"/>
+    </properties>
+  </persistence-unit>
+</persistence>
